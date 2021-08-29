@@ -6,7 +6,12 @@ const theme = createTheme({});
 
 type Pokemon = {
   name: string,
-  id: string,
+  imgUrl: string,
+  captureRate?: number,
+  id?: string,
+  previousPokemon?: Pokemon,
+  nextPokemon?: Pokemon,
+  isLegendary?: boolean,
 }
 
 type AppState = {
